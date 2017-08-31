@@ -169,8 +169,8 @@ var KeystoneSitemap = function(keystone, req, res) {
 		sitemap({
 		    map: map,
 		    route: route,
-		    url: host,
-		    http: req.protocol
+		    url: options.url || host,
+		    http: options.http || req.protocol
 		}).XMLtoWeb(res);
 	};
 

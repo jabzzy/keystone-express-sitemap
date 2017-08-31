@@ -123,8 +123,10 @@ app.get('/sitemap.xml', function(req, res) {
 });
 ```
 
-This option may allow you to define custom fields for routes, that look like this one — `/:page`.
+This option allows you to define custom fields for routes, that look like this: `/:page`.
 
+### Base URL and scheme
+`options` parameter accepts `http` and `url` as properties to setup scheme and base URL respectively. They are the same as corresponding `express-sitemap` options.
 
 ## Usage notes
 * The sitemap generator works with dynamic routes declared in 2 formats:
